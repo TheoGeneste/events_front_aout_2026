@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import './App.css'
 import HomePage from './Pages/HomePage'
 import LoginPage from './Pages/LoginPage'
+import RegisterPage from './Pages/RegisterPage'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
           {/* Element = Composant afficher pour la route associée */}
           <Route path='/' element={<HomePage />} />
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
     </>
